@@ -1,20 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from "react";
+import "./styles.css";
+import Distributors from "./components/Distributors";
+import BookDemo from "./components/BookDemo";
+import Footer from "./components/Footer";
 
 export default function App() {
+  const [page, setPage] = useState("distributors");
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <div className="page">
+      {page === "distributors" && <Distributors goTo={setPage} />}
+      {page === "bookdemo" && <BookDemo goTo={setPage} />}
+    </div>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

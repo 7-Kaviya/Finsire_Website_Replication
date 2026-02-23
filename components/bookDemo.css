@@ -1,0 +1,106 @@
+.demo-page {
+  min-height: 100vh;
+  background: #f4f6f8;
+  font-family: "Inter", sans-serif;
+}
+
+.demo-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.demo-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0b5c74;
+}
+
+.back-btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.demo-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 100px;
+  gap: 60px;
+}
+
+.demo-left {
+  width: 50%;
+}
+
+.demo-left h1 {
+  font-size: 48px;
+  color: #0b5c74;
+}
+
+.demo-left p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #444;
+}
+
+.contact-info {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #333;
+}
+
+.demo-form {
+  width: 40%;
+  background: white;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.demo-form input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+.form-group label {
+  font-size: 15px;
+  font-weight: 400;
+  color: #101010;
+}
+
+.form-group input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #0b5c74;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  background: #0b5c74;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
