@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import logo from "../images/logo.png";
 import centreImage from "../images/centreimage.png";
 import threeWay from "../images/threeway.png";
@@ -20,8 +20,8 @@ export default function Distributors({ goTo }) {
           <button>DISTRIBUTORS</button>
           <button>BLOGS</button>
           <button>MEDIA</button>
-          <button>CAREERS</button>
-          <button>ABOUT US</button>
+          <button onClick={() => goTo("careers")}>CAREERS</button>
+          <button onClick={() => goTo("aboutus")}>ABOUT US</button>
         </div>
 
         <div className="nav-right">

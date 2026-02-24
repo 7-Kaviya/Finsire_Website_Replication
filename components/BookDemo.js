@@ -2,7 +2,6 @@ import React from "react";
 import "../components/bookDemo.css";
 import logo from "../images/logo.png";
 import Footer from "../components/Footer";
-import Distributors from "../components/Distributors";
 
 export default function BookDemo({ goTo }) {
   return (
@@ -12,7 +11,7 @@ export default function BookDemo({ goTo }) {
         <div className="demo-logo">
           <img src={logo} alt="FINSIRE" className="logo-img" />
         </div>
-        <button className="back-btn" onClick={() => goTo("distributors")}>Go Back to Website</button>
+        <button className="back-btn" onClick={() => goTo("home")}>Go Back to Website</button>
       </div>
 
       <div className="demo-container">

@@ -55,12 +55,8 @@ p {
 .logo-img {
   width: 100%;
   height: 100%;
-}
-
-.logo-text {
+  font-size: 30px;
   font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 0.5px;
 }
 
 .nav-center button {
@@ -190,6 +186,9 @@ p {
   padding: 12px 26px;
   font-size: 15px;
 }
+.button-row{
+  margin: 20px;
+}
 
 /* ================= SECTIONS ================= */
 
@@ -270,6 +269,15 @@ p {
   text-align: center;
 }
 
+.info-card h5 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #1a3882;
+  text-align: center;
+  font-weight: 400;
+  background-color: #e2e8f7;
+}
+
 .info-card ul {
   padding-left: 18px;
   margin: 0;
@@ -333,7 +341,7 @@ p {
 .steps-row {
   display: flex;
   justify-content: center;
-  gap: 0px;
+  gap: 0.5px;
   margin-top: 40px;
   flex-wrap: wrap;
   margin-bottom: 10px;
@@ -370,6 +378,53 @@ p {
   margin-bottom: 10px;
   color: #6a6a6a;
   text-align: left;
+  font-weight: 400;
+}
+
+.step {
+  background: white;
+  border-radius: 14px;
+  padding: 26px;
+  width: 300px;
+  text-align: left;
+  border: 1px solid #e6eef2;
+}
+
+.step1 {
+  background: white;
+  border-radius: 14px;
+  padding: 26px;
+  width: 220px;
+  text-align: center;
+  border: 1px solid #e6eef2;
+}
+
+.step h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #0b5c74;
+  text-align: center;
+}
+
+.step h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #6a6a6a;
+  text-align: center;
+  font-weight: 400;
+}
+.step1 h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #0b5c74;
+  text-align: center;
+}
+
+.step1 h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #6a6a6a;
+  text-align: center;
   font-weight: 400;
 }
 
@@ -447,4 +502,8 @@ p {
   font-size: 15px;
   opacity: 0.6;
   text-align: center;
+  margin-bottom: 20px;
+}
+.disclaimer {
+  opacity: 0.6;
 }

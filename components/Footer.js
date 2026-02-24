@@ -5,7 +5,7 @@ export default function App() {
       <footer className="footer">
         <div className="footer-top">
           <div className="footer-brand">
-            <img src={logo} alt="logo" className="logo-img" />
+            <img src={logo} alt="FINSIRE" className="logo-img" />
             <p>Empower your decisions effortlessly with our suite <br />
               designed to optimize operations and elevate <br />
               customer experience.</p>
@@ -27,6 +27,21 @@ export default function App() {
         </div>
         <div className="address">
           Address: #48, 1st Floor, 2nd Street, Balaji Nagar, Royapettah, Chennai, Tamil Nadu - 600 014
+        </div>
+        <hr />
+        <div className="disclaimer">
+          Disclaimer: Loan approval and terms are subject to analysis of your mutual fund portfolio
+          and fulfillment of KYC/eligibility criteria. The exact loan-to-value (LTV) offered will depend
+          on the type of mutual funds pledged and may vary (e.g. up to ~50% for equity funds and ~75%
+          for debt funds, as per industry norms and as per a particular lender). Mutual fund investments
+          will be lien-marked in favor of the lender during the tenure of the loan, meaning you cannot redeem
+          or sell those units until the loan is repaid. However, you continue to remain the owner of the
+          funds and enjoy all gains/dividends. Interest rates and other charges will be clearly 
+          disclosed in the sanction letter; please read all terms and conditions carefully. 
+          Finsire is a technology platform facilitating loans issued by its partner banks/NBFCs – all 
+          loans are at the sole discretion of the lending partners. Mutual Funds are subject to market
+          risks; a fall in NAV of pledged funds may require additional collateral or partial repayment (margin call). 
+          Make sure to borrow responsibly and have a repayment plan in place to avoid liquidation of your investments.
         </div>
       </footer>
   );
