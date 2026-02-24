@@ -29,7 +29,7 @@ export default function Distributors({ goTo }) {
 
         <div className="nav-right">
           <button className="outline-btn" onClick={() => goTo("bookdemo")}>Book a Demo</button>
-          <button className="primary-btn">Get a Loan</button>
+          <button className="primary-btn" onClick={() => goTo("loan")}>Get a Loan</button>
         </div>
       </nav>
 
@@ -76,7 +76,7 @@ export default function Distributors({ goTo }) {
         
         <div className="button-row">
           <button className="text-btn" onClick={() => goTo("bookdemo")}>How it works ↗</button>
-          <button className="primary-btn">Check my eligibility →</button>
+          <button className="primary-btn" onClick={() => goTo("loan")}>Check my eligibility →</button>
         </div>
       </section>
 
@@ -110,7 +110,7 @@ export default function Distributors({ goTo }) {
           </div>
           </div>
 
-        <button className="primary-btn" >Check my eligibility →</button>
+        <button className="primary-btn" onClick={() => goTo("loan")}>Check my eligibility →</button>
       </section>
 
       {/* ================= PROCESS SECTION ================= */}
@@ -118,19 +118,44 @@ export default function Distributors({ goTo }) {
       <section className="section light-grid">
         <p className="section-label">HOW IT WORKS</p>
         <h2>From Portfolio to Cash in Just 3 Steps</h2>
-        <div>
-          <img src={threeWay} alt="threeway" className="threeway-img" />
+        <div className="steps-section">
+        <div className="step-row">
+        <div className="step-text">
+          <p className="step-label">STEP 1/3</p>
+          <h2>Apply and check eligibility</h2>
+          <p>
+            Your mutual funds remain invested, so you keep earning returns
+            while accessing cash.
+          </p>
         </div>
-        <p className="dist-subtext">Real-time lien marking <span className="star"> ✦ </span> Multi-lender integration <span className="star">✦</span> Regulator approved workflows 
-        </p>
-        <div>
-          <h4 className="info1">❖ Seamlessly embed secured credit journeys into your applications ❖</h4>
-        </div>
+      </div>
 
-        <div className="button-row">
-          <button className="text-btn">Test the flow ↗</button>
-          <button className="primary-btn" onClick={() => goTo("bookdemo")}>Book a demo →</button>
+      <div className="step-row">
+        <div className="step-text">
+          <p className="step-label">STEP 2/3</p>
+          <h2>Pledge your funds</h2>
+          <p>
+            Select the funds you wish to pledge. Lien marking is carried out
+            digitally via a SEBI-compliant process, with no requirement for
+            physical paperwork.
+          </p>
         </div>
+      </div>
+
+      <div className="step-row">
+        <div className="step-text">
+          <p className="step-label">STEP 3/3</p>
+          <h2>Get instant disbursal</h2>
+          <p>
+            The loan is approved within minutes and credited directly to your
+            bank account, available 24x7. Your investments stay intact while
+            you access liquidity.
+          </p>
+        </div>
+      </div>
+
+    </div>
+        
       </section>
 
       {/* ================= AUDIENCE SECTION ================= */}
@@ -170,7 +195,7 @@ export default function Distributors({ goTo }) {
           </div>
           </div>
 
-        <button className="primary-btn" >Check my eligibility →</button>
+        <button className="primary-btn" onClick={() => goTo("loan")}>Check my eligibility →</button>
       </section>
 
       {/* ================= QUERY SECTION ================= */}
@@ -178,34 +203,68 @@ export default function Distributors({ goTo }) {
       <section className="section">
         <p className="section-label">FREQUENTLY ASKED QUESTIONS</p>
         <h2>We’ve Got Answers</h2>
+        <div className="faq-section">
+  <div className="faq-container">
 
-         <div className="steps-row">
-          <div className="steps">
-            <h1>01</h1>
-            <h3>CONNECT</h3>
-            <h4>Integrate systems seamlessly</h4>
-          </div>
-          <div className="steps">
-            <h1>02</h1>
-            <h3>ONBOARD</h3>
-            <h4>Verify users and portfolios</h4>
-          </div>
-          <div className="steps">
-            <h1>03</h1>
-            <h3>PLEDGE</h3>
-            <h4>Enable secure, real-time lien marking</h4>
-          </div>
-          <div className="steps">
-            <h1>04</h1>
-            <h3>DISBURSE & MANAGE</h3>
-            <h4>Automate loan disbursal and portfolio monitoring</h4>
-          </div>
-          <div>
-            <h4 className="info">❖ Finsire handles secured lending and you focus on customers ❖</h4>
-          </div>
-          </div>
+    {/* LEFT FAQ */}
+    <div className="faq-card">
 
-        <button className="primary-btn" onClick={() => goTo("bookdemo")}>Start integration →</button>
+      <div className="faq-item">
+        <div className="faq-question">
+          What exactly is a loan against mutual funds?
+          <span>⌃</span>
+        </div>
+        <div className="faq-answer">
+          It’s a secured loan where you use your mutual fund units as collateral.
+          You don’t sell them as they remain invested, and you keep earning
+          returns while getting instant liquidity.
+        </div>
+      </div>
+
+      <div className="faq-item">
+        <div className="faq-question">
+          How much can I borrow?
+          <span>⌄</span>
+        </div>
+      </div>
+
+      <div className="faq-item">
+        <div className="faq-question">
+          Which mutual funds are eligible?
+          <span>⌄</span>
+        </div>
+      </div>
+
+      <div className="faq-item">
+        <div className="faq-question">
+          Is my money safe when I pledge?
+          <span>⌄</span>
+        </div>
+      </div>
+
+      <div className="view-all">
+        View all ›
+      </div>
+
+    </div>
+
+    {/* RIGHT CONTACT CARD */}
+    <div className="contact-card">
+
+      <div className="contact-text">
+        <div className="badge">LEARN ABOUT LAMF</div>
+        <div className="contact-title">
+          Call us for a 5-minute practical introduction
+        </div>
+
+        <a href="tel:+918645627153" className="call-button">
+          📞 +91 86456 27153
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
       </section>
 
       {/* ================= SECURITY SECTION ================= */}
@@ -217,7 +276,7 @@ export default function Distributors({ goTo }) {
         <p className="dist-subtext">Stop letting your investments sit idle- unlock instant liquidity.<br />
         Borrow smart, stay invested, and keep growing.</p>
         <div className="button-row">
-          <button className="text-btn">Check my eligibility ↗</button>
+          <button className="text-btn" onClick={() => goTo("loan")}>Check my eligibility ↗</button>
           <button className="primary-btn" onClick={() => goTo("bookdemo")}>Apply Now →</button>
         </div>
         
