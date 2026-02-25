@@ -1,4 +1,4 @@
-/* ================= GLOBAL RESET ================= */
+/* ================= ENTIRE STYLES ================= */
 
 * {
   box-sizing: border-box;
@@ -65,7 +65,7 @@ p {
   margin: 0 14px;
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.75);
   font-size: 20px;
   cursor: pointer;
   opacity: 0.75;
@@ -90,7 +90,7 @@ p {
   background: linear-gradient(
     180deg,
     #083344 0%,
-    #0f4c5c 38%,
+    #467f8d 38%,
     #dff6fb 100%
   );
   color: white;
@@ -155,9 +155,9 @@ p {
 }
 
 .outline-btn {
-  background: #0b5c74;
+  background: white;
   border: white;
-  color: white;
+  color: #092731;
   padding: 10px 18px;
   border-radius: 50px;
   cursor: pointer;
@@ -165,7 +165,7 @@ p {
 }
 
 .outline-btn:hover {
-  background: #022a38;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
 
 .text-btn {
@@ -192,7 +192,17 @@ p {
 
 /* ================= SECTIONS ================= */
 
-.section {
+.section1 {
+  padding: 90px 20px;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    #e0f6fd 0%,
+    #f6fdff 38%,
+    #ffffff 100%
+  );
+}
+section {
   padding: 90px 20px;
   text-align: center;
 }

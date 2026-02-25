@@ -18,15 +18,16 @@ export default function BookDemo({ goTo }) {
         <div className="demo-left">
           <h1>Book a Demo <br /> Call with us</h1>
 
-          <p>
+          <h3>
             Partner with Finsire to experience industry leading digital
             infrastructure for assets. Simply fill out the form and tell us
             about your vision and requirements.
-          </p>
-
+          </h3>
+          <img src="/demo.png" alt="demo" className="demo-img" /><br />
+          <h4>Don’t like filling forms? Alternate ways to contact us.</h4>
           <div className="contact-info">
-            <p>✉ CONTACT US: support@finsire.com</p>
-            <p><span>📞</span>PHONE: +91 73582 60365</p>
+             ✉ CONTACT US: <a href="mailto:support@finsire.com">SUPPORT@FINSIRE.COM</a>
+             <span className="phone">📞PHONE: <a href="tel:+917358260365">+91 73582 60365</a></span>
           </div>
         </div>
 

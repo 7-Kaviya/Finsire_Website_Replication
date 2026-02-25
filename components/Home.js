@@ -76,7 +76,7 @@ export default function Distributors({ goTo }) {
 
       {/* ================= LENDERS SECTION ================= */}
 
-      <section className="section">
+      <section className="section1">
         <p className="section-label">WHY LOAN AGAINST MUTUAL FUNDS</p>
         <h2>Key Benefits</h2>
 
@@ -199,6 +199,7 @@ export default function Distributors({ goTo }) {
             <h1>Flexibility with Control</h1>
             <h4>Pay interest only on what you use. Repay principal when you want without any penalties.</h4>
           </div>
+          <br />
           <div>
             <h4 className="info">❖ Let your portfolio keep growing while you get the funds you need ❖</h4>
           </div>

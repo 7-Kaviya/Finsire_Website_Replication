@@ -57,7 +57,7 @@ export default function Distributors({ goTo }) {
 
       {/* ================= LENDERS SECTION ================= */}
 
-      <section className="section">
+      <section className="section1">
         <p className="section-label">SOLUTION FOR LENDERS</p>
         <h2>Plug and Play for Secured Credit</h2>
 
@@ -180,6 +180,7 @@ export default function Distributors({ goTo }) {
             <h3>DISBURSE & MANAGE</h3>
             <h4>Automate loan disbursal and portfolio monitoring</h4>
           </div>
+          <br />
           <div>
             <h4 className="info">❖ Finsire handles secured lending and you focus on customers ❖</h4>
           </div>
