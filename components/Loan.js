@@ -1,12 +1,11 @@
 import React from "react";
 import "./loanstyles.css";
 
-export default function AuthScreen() {
+export default function Loan({goTo}) {
   return (
     <div className="auth-page">
-
+      <button className="back" onClick={() => goTo("home")}>← Back</button>
       {/* LEFT SIDE */}
-
       <div className="auth-left">
         <img src="/loan.png" alt="loan" className="loan-img" />
         <h1>

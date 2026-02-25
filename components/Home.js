@@ -22,7 +22,7 @@ export default function Distributors({ goTo }) {
         </div>
 
         <div className="nav-right">
-          <button className="outline-btn" onClick={() => goTo("bookdemo")}>Book a Demo</button>
+          <button className="outline-btn1" onClick={() => goTo("bookdemo")}>Book a Demo</button>
           <button className="primary-btn" onClick={() => goTo("loan")}>Get a Loan</button>
         </div>
       </nav>
