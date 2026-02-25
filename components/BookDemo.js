@@ -1,6 +1,5 @@
 import React from "react";
 import "../components/bookDemo.css";
-import logo from "../images/logo.png";
 import Footer from "../components/Footer";
 
 export default function BookDemo({ goTo }) {
@@ -9,7 +8,7 @@ export default function BookDemo({ goTo }) {
       {/* Top Navbar */}
       <div className="demo-navbar">
         <div className="demo-logo">
-          <img src={logo} alt="FINSIRE" className="logo-img" />
+          <img src="/logo2.png" alt="FINSIRE" className="logo-img" />
         </div>
         <button className="back-btn" onClick={() => goTo("home")}>Go Back to Website</button>
       </div>
@@ -26,8 +25,8 @@ export default function BookDemo({ goTo }) {
           </p>
 
           <div className="contact-info">
-            <p>CONTACT US: support@finsire.com</p>
-            <p>PHONE: +91 73582 60365</p>
+            <p>✉ CONTACT US: support@finsire.com</p>
+            <p><span>📞</span>PHONE: +91 73582 60365</p>
           </div>
         </div>
 
@@ -59,7 +58,7 @@ export default function BookDemo({ goTo }) {
           <button className="submit-btn">Request Access</button>
         </div>
       </div>
-      <Footer />
+      <Footer goTo={goTo} />
     </div>
   );
 }

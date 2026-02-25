@@ -1,6 +1,5 @@
 import React from "react";
 import "../components/bookDemo.css";
-import logo from "../images/logo.png";
 import Footer from "../components/Footer";
 
 export default function BookDemo({ goTo }) {
@@ -9,12 +8,13 @@ export default function BookDemo({ goTo }) {
       {/* Top Navbar */}
       <div className="demo-navbar">
         <div className="demo-logo">
-          <img src={logo} alt="FINSIRE" className="logo-img" />
+          <img src="/logo2.png" alt="FINSIRE" className="logo-img" />       <span>CAREERS</span>
         </div>
         <button className="back-btn" onClick={() => goTo("home")}>Go Back to Website</button>
       </div>
 
       <div className="careers-container">
+        <img src="/careers.png" alt="careers" className="careers-img" />
         <h1>No current openings,<br />
          but we’d love to connect.</h1>
         <h3>Follow us for updates and be the first to know <br />
@@ -31,7 +31,7 @@ export default function BookDemo({ goTo }) {
         </div>
       </div>
       </div>
-      <Footer />
+      <Footer goTo={goTo} />
     </div>
   );
 }

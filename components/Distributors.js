@@ -1,7 +1,4 @@
 import React from "react";
-import logo from "../images/logo.png";
-import centreImage from "../images/centreimage.png";
-import threeWay from "../images/threeway.png";
 import Footer from "../components/Footer";
 
 export default function Distributors({ goTo }) {
@@ -12,14 +9,14 @@ export default function Distributors({ goTo }) {
 
       <nav className="navbar">
         <div className="nav-left">
-          <img src={logo} alt="FINSIRE" className="logo-img" />
+          <img src="/logo.png" alt="FINSIRE" className="logo-img" />
 
         </div>
 
         <div className="nav-center">
           <button>DISTRIBUTORS</button>
-          <button>BLOGS</button>
-          <button>MEDIA</button>
+          <button onClick={() => goTo("blogs")}>BLOGS</button>
+          <button onClick={() => goTo("media")}>MEDIA</button>
           <button onClick={() => goTo("careers")}>CAREERS</button>
           <button onClick={() => goTo("aboutus")}>ABOUT US</button>
         </div>
@@ -50,7 +47,7 @@ export default function Distributors({ goTo }) {
         {/* HERO IMAGES */}
 
         <div className="hero-images">
-          <img src={centreImage} alt="center screen" />
+          <img src="/centerimage.png" alt="center screen"/>
         </div>
 
         <button className="primary-btn large-btn" onClick={() => goTo("bookdemo")}>
@@ -66,6 +63,7 @@ export default function Distributors({ goTo }) {
 
         <div className="card-row">
           <div className="info-card">
+            <img src="/icon10.png" alt="icon10" className="icon-img" />
             <h3>Loan Origination System</h3>
             <ul>
               <li>Instant on-boarding</li>
@@ -75,6 +73,7 @@ export default function Distributors({ goTo }) {
           </div>
 
           <div className="info-card">
+            <img src="/icon6.png" alt="icon6" className="icon-img" />
             <h3>Collateral Management System</h3>
             <ul>
               <li>Maker-checker flows</li>
@@ -84,6 +83,7 @@ export default function Distributors({ goTo }) {
           </div>
 
           <div className="info-card">
+            <img src="/icon11.png" alt="icon11" className="icon-img" />
             <h3>Loan Management System</h3>
             <ul>
               <li>Integration for secured lending</li>
@@ -96,7 +96,7 @@ export default function Distributors({ goTo }) {
           </div>
         </div>
 
-        <button className="outline-btn" onClick={() => goTo("bookdemo")}>Book a Demo</button>
+        <button className="outline-btn" onClick={() => goTo("bookdemo")}>Book a Demo →</button>
       </section>
 
       {/* ================= DISTRIBUTORS SECTION ================= */}
@@ -105,7 +105,7 @@ export default function Distributors({ goTo }) {
         <p className="section-label">SOLUTION FOR DISTRIBUTORS</p>
         <h2>Embed Secured Lending into Your Ecosystem</h2>
         <div>
-          <img src={threeWay} alt="threeway" className="threeway-img" />
+          <img src="/threeway.png" alt="threeway" className="threeway-img" />
         </div>
         <p className="dist-subtext">Real-time lien marking <span className="star"> ✦ </span> Multi-lender integration <span className="star">✦</span> Regulator approved workflows 
         </p>
@@ -198,18 +198,25 @@ export default function Distributors({ goTo }) {
         </p>
         <div className="card-row">
           <div className="info-card">
+            <img src="/icon12.png" alt="icon12" className="icon-img" />
             <p>SEBI-compliant lien marking</p>
           </div>
 
           <div className="info-card">
+            <img src="/icon13.png" alt="icon13" className="icon-img" />
             <p>RBI-regulated lending partners</p>
           </div>
 
           <div className="info-card">
+            <img src="/icon14.png" alt="icon14" className="icon-img" />
             <p>Bank-grade encryption</p>
           </div>
         </div>
       </section>
+      <div className="partners">
+        <p>LEGAL & INTEGRATION PARTNERS</p>
+        <img src="/partner.png" alt="partner" className="partner-img" />
+      </div>
 
       {/* ================= CTA SECTION ================= */}
 
@@ -219,11 +226,12 @@ export default function Distributors({ goTo }) {
               Generation of Secured Lending?</h1>
             <h3>Join leading banks, NBFCs, and fintechs building <br />
               smarter credit products with Finsire.</h3>
+            <img src="/iconrow.png" alt="iconrow" className="logo-img" /><br />
             <button className="primary-btn" onClick={() => goTo("bookdemo")}>Request access →</button>
           </div>
        </div>
 
-      <Footer />
+      <Footer goTo={goTo} />
 
     </div>
   );

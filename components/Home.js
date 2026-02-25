@@ -1,10 +1,4 @@
-import React, { useEffect, useState } from "react";
-import logo from "../images/logo.png";
-import centreImage from "../images/centreimage.png";
-import threeWay from "../images/threeway.png";
-import b1 from "../images/Bank1.png";
-import b2 from "../images/Bank2.png";
-import b3 from "../images/Bank3.png";
+import React from "react";
 import Footer from "../components/Footer";
 
 export default function Distributors({ goTo }) {
@@ -15,14 +9,14 @@ export default function Distributors({ goTo }) {
 
       <nav className="navbar">
         <div className="nav-left">
-          <img src={logo} alt="FINSIRE" className="logo-img" />
+          <img src="/logo.png" alt="FINSIRE" className="logo-img" />
 
         </div>
 
         <div className="nav-center">
           <button onClick={() => goTo("distributors")}>DISTRIBUTORS</button>
-          <button>BLOGS</button>
-          <button>MEDIA</button>
+          <button onClick={() => goTo("blogs")}>BLOGS</button>
+          <button onClick={() => goTo("media")}>MEDIA</button>
           <button onClick={() => goTo("careers")}>CAREERS</button>
           <button onClick={() => goTo("aboutus")}>ABOUT US</button>
         </div>
@@ -49,7 +43,7 @@ export default function Distributors({ goTo }) {
          <div className="card-row">
           <div className="info-card">
             <div className="hero-images">
-              <img src={b1} alt="Bank1" />
+              <img src="/Bank1.png" alt="Bank1" />
             </div>
             <p>City Union Bank</p>
             <h5>LOWEST INTEREST RATE</h5>
@@ -57,7 +51,7 @@ export default function Distributors({ goTo }) {
 
           <div className="info-card">
             <div className="hero-images">
-              <img src={b2} alt="Bank2" />
+              <img src="/Bank2.png" alt="Bank2" />
             </div>
             <p>Bajaj Finance Limited</p>
             <h5>LEADS WITH 35%+ MARKET SHARE</h5>
@@ -65,7 +59,7 @@ export default function Distributors({ goTo }) {
 
           <div className="info-card">
             <div className="hero-images">
-              <img src={b3} alt="Bank3" />
+              <img src="/Bank3.png" alt="Bank3" />
             </div>
             <p>Suryoday Small Finance Bank</p>
             <h5>HIGHEST LOAN-TO-VALUE</h5>
@@ -88,20 +82,24 @@ export default function Distributors({ goTo }) {
 
         <div className="steps-row">
           <div className="step">
+            <img src="/icon6.png" alt="icon6" className="icon-img" />
             <h1>Stay Invested, <br />
                Keep Growing</h1>
             <h4>Your mutual funds remain invested, so you keep earning returns while accessing cash.</h4>
           </div>
           <div className="step">
+            <img src="/icon7.png" alt="icon7" className="icon-img" />
             <h1>Lower Interest,<br />
                  Higher Value</h1>
             <h4>Enjoy rates far below personal loans or credit cards, with a higher sanctioned amount.</h4>
           </div>
           <div className="step">
+            <img src="/icon8.png" alt="icon8" className="icon-img" />
             <h1>Flexible Repayments</h1>
             <h4>Pay interest only on what you use and repay principal anytime without penalties.</h4>
           </div>
           <div className="step">
+            <img src="/icon9.png" alt="icon9" className="icon-img" />
             <h1>Instant & 100% <br />Digital Process</h1>
             <h4>Apply online, pledge digitally, & get disbursal in minutes without branch visits.</h4>
           </div>
@@ -118,10 +116,12 @@ export default function Distributors({ goTo }) {
       <section className="section light-grid">
         <p className="section-label">HOW IT WORKS</p>
         <h2>From Portfolio to Cash in Just 3 Steps</h2>
-        <div className="steps-section">
-        <div className="step-row">
-        <div className="step-text">
-          <p className="step-label">STEP 1/3</p>
+        <section className="steps-sections">
+      <div className="step-rows">
+        <img src="/steps.png" alt="Step 1" className="step-image" />
+
+        <div className="step-texts">
+          <p className="step-labels">STEP 1/<span>3</span></p>
           <h2>Apply and check eligibility</h2>
           <p>
             Your mutual funds remain invested, so you keep earning returns
@@ -130,9 +130,11 @@ export default function Distributors({ goTo }) {
         </div>
       </div>
 
-      <div className="step-row">
-        <div className="step-text">
-          <p className="step-label">STEP 2/3</p>
+      <div className="step-rows">
+        <img src="/step2.png" alt="Step 2" className="step-image" />
+
+        <div className="step-texts">
+          <p className="step-labels">STEP 2/<span>3</span></p>
           <h2>Pledge your funds</h2>
           <p>
             Select the funds you wish to pledge. Lien marking is carried out
@@ -142,19 +144,21 @@ export default function Distributors({ goTo }) {
         </div>
       </div>
 
-      <div className="step-row">
-        <div className="step-text">
-          <p className="step-label">STEP 3/3</p>
+      <div className="step-rows">
+        <img src="/step3.png" alt="Step 3" className="step-image" />
+
+        <div className="step-texts">
+          <p className="step-labels">STEP 3/<span>3</span></p>
           <h2>Get instant disbursal</h2>
           <p>
             The loan is approved within minutes and credited directly to your
-            bank account, available 24x7. Your investments stay intact while
+            bank account, available 24×7. Your investments stay intact while
             you access liquidity.
           </p>
         </div>
       </div>
 
-    </div>
+    </section>
         
       </section>
 
@@ -171,22 +175,27 @@ export default function Distributors({ goTo }) {
 
         <div className="steps-row">
           <div className="step1">
+            <img src="/icon1.png" alt="icon1" className="icon-img" />
             <h1>Compounding Works</h1>
             <h4>Your funds stay invested, keep earning - even while pledged. No loss on market upside.</h4>
           </div>
           <div className="step1">
+            <img src="/icon2.png" alt="icon2" className="icon-img" />
             <h1>Avoid Bad Timing Losses</h1>
             <h4>Selling in a dip locks losses. Pledging lets you ride the recovery and access cash.</h4>
           </div>
           <div className="step1">
+            <img src="/icon3.png" alt="icon3" className="icon-img" />
             <h1>Maintain Tax Efficiency</h1>
             <h4>No capital gains tax triggered because you’re not selling units. Keep your tax planning intact.</h4>
           </div>
           <div className="step1">
+            <img src="/icon4.png" alt="icon4" className="icon-img" />
             <h1>Access More, Pay Less</h1>
             <h4>Get up to 80% of your MF value with lower rates than personal loans or credit cards.</h4>
           </div>
           <div className="step1">
+            <img src="/icon5.png" alt="icon5" className="icon-img" />
             <h1>Flexibility with Control</h1>
             <h4>Pay interest only on what you use. Repay principal when you want without any penalties.</h4>
           </div>
@@ -212,12 +221,7 @@ export default function Distributors({ goTo }) {
       <div className="faq-item">
         <div className="faq-question">
           What exactly is a loan against mutual funds?
-          <span>⌃</span>
-        </div>
-        <div className="faq-answer">
-          It’s a secured loan where you use your mutual fund units as collateral.
-          You don’t sell them as they remain invested, and you keep earning
-          returns while getting instant liquidity.
+          <span>⌄</span>
         </div>
       </div>
 
@@ -282,7 +286,7 @@ export default function Distributors({ goTo }) {
         
       </section>
 
-      <Footer />
+      <Footer goTo={goTo} />
 
     </div>
   );

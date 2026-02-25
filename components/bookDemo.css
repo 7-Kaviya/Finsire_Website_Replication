@@ -12,9 +12,21 @@
 }
 
 .demo-logo {
+  display: flex;
+  align-items: center;  
+  gap: 12px;             
+}
+
+.demo-logo p{
   font-size: 22px;
   font-weight: 700;
   color: #0b5c74;
+}
+
+.demo-logo span {
+  font-size: 20px;
+  font-weight: 400;      
+  line-height: 1;       
 }
 
 .back-btn {
@@ -42,9 +54,10 @@
 }
 
 .demo-left p {
-  margin-top: 20px;
+  margin-top: 50px;
   font-size: 18px;
-  color: #444;
+  color: #5a5959;
+  font-size: 25px;
 }
 
 .contact-info {
@@ -53,8 +66,9 @@
   color: #333;
 }
 
+
 .demo-form {
-  width: 40%;
+  width: 50%;
   background: white;
   padding: 40px;
   border-radius: 14px;
@@ -78,7 +92,7 @@
 .form-group label {
   font-size: 15px;
   font-weight: 400;
-  color: #101010;
+  color: #444;
 }
 
 .form-group input {
@@ -91,6 +105,11 @@
 .form-group input:focus {
   outline: none;
   border-color: #0b5c74;
+}
+
+.form-group input::placeholder {
+  color: #7f7d7d;  
+  opacity: 1;     
 }
 
 .submit-btn {
@@ -161,6 +180,13 @@
   justify-content: center;
   gap: 32px;
   margin-top: 40px;
+}
+
+.careers-img {
+  display: block;
+  margin: 0 auto;
+  height: 250px;
+  width: auto;
 }
 
 .left,

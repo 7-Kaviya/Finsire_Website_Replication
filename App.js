@@ -6,6 +6,8 @@ import BookDemo from "./components/BookDemo";
 import AboutUs from "./components/AboutUS";
 import Careers from "./components/Careers";
 import Loan from "./components/Loan";
+import Blogs from "./components/Blogs";
+import Media from "./components/Media";
 
 export default function App() {
   const [page, setPage] = useState("home");
@@ -18,6 +20,8 @@ export default function App() {
       {page === "aboutus" && <AboutUs goTo={setPage} />}
       {page === "careers" && <Careers goTo={setPage} />}
       {page === "loan" && <Loan goTo={setPage} />}
+      {page === "blogs" && <Blogs goTo={setPage} />}
+      {page === "media" && <Media goTo={setPage} />}
     </div>
   );
 }

@@ -8,6 +8,7 @@ export default function AuthScreen() {
       {/* LEFT SIDE */}
 
       <div className="auth-left">
+        <img src="/loan.png" alt="loan" className="loan-img" />
         <h1>
           Unlock Your Mutual <br />
           Funds, Without Letting <br />

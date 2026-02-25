@@ -1,11 +1,10 @@
 import React from "react";
-import logo from "../images/logo.png";
-export default function App() {
+export default function Footer({goTo}) {
   return (
       <footer className="footer">
         <div className="footer-top">
           <div className="footer-brand">
-            <img src={logo} alt="FINSIRE" className="logo-img" />
+            <img src="/logo.png" alt="FINSIRE" className="logo-img" />
             <p>Empower your decisions effortlessly with our suite <br />
               designed to optimize operations and elevate <br />
               customer experience.</p>
@@ -13,13 +12,17 @@ export default function App() {
           </div>
 
           <div className="footer-links">
-            <span>DISTRIBUTORS</span>
-            <span>BLOGS</span>
-            <span>MEDIA</span>
-            <span>CAREERS</span>
-            <span>ABOUT US</span>
-            <span>GRIEVANCE</span>
+            <h1>Backed by Institutions and Leaders from</h1>
+            <img src="/footer.png" alt="footer" className="footer-img" />
           </div>
+        </div>
+
+        <div className="footer-button">
+              <button onClick={() => goTo("distributors")}>DISTRIBUTORS</button>
+              <button onClick={() => goTo("blogs")}>BLOGS</button>
+              <button onClick={() => goTo("media")}>MEDIA</button>
+              <button onClick={() => goTo("careers")}>CAREERS</button>
+              <button onClick={() => goTo("aboutus")}>ABOUT US</button>
         </div>
 
         <div className="footer-bottom">
@@ -42,6 +45,9 @@ export default function App() {
           loans are at the sole discretion of the lending partners. Mutual Funds are subject to market
           risks; a fall in NAV of pledged funds may require additional collateral or partial repayment (margin call). 
           Make sure to borrow responsibly and have a repayment plan in place to avoid liquidation of your investments.
+        </div>
+        <div className="finsire">
+          <img src="/finsire.png" alt="finsire" className="finsire-img" />
         </div>
       </footer>
   );
